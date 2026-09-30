@@ -1,4 +1,4 @@
-const enCACHE = v1';
+const enCACHE = v2';
 const ASSETS = [
   './',
   './index.html',
