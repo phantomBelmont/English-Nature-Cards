@@ -1,0 +1,75 @@
+html { 
+      background:#111;
+      }
+body{
+      color:#aa0;
+}
+#catStage{
+      display:flex;
+      flex-wrap:wrap;
+}
+#catStage div {   
+      display:flex;
+      font-size: 3.5rem;
+      background:transparent; 
+      margin:10px;
+      transition:opacity 1.9s ease, transform 1.9s ease, scale 1.9s ease;
+    }
+    .fade-out{
+          opacity:0;
+          scale:0.9;
+          transform:translateY(10px);
+    }
+    
+    /*ボタンの押し心地など*/
+    .nicePush{
+          width: auto;
+          padding:5px 10px;
+          transition:0.1s;
+          font-size: 1rem;
+          font-weight :600;
+          border-radius: 10px;
+          background: #777;
+          color: #000;
+          transition:font-size 0.1s, transform 0.1s;
+    }
+    .nicePush:active{
+          transform:scale(0.9) translateY(2px) ;
+          font-size:15px;
+    }
+    
+     /*単語カード*/
+   #delBtn{
+         color:#900;
+   }
+    #wordsStage{
+          list-style: none;
+    }
+    .firstSight{
+          background:#030;
+    }
+   #wordsStage li{
+          display:inline-block;
+          padding:10px 5px;
+          margin:5px;
+          font-size:2rem;
+          color:#aa0;
+          border-radius:10px;
+    }
+    
+    .stickyBar{
+          display:flex;
+          position:sticky;
+          top:0;
+          justify-content: space-between;
+          background:#333;
+          align-items:center;
+          margin-top:10px;
+    }
+    
+    #langStatus{
+          color:gold;
+          font-size: 1.7rem;
+    }
+    
+  
