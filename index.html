@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+    script-src 'self'; 
+    style-src 'self'; 
+    img-src 'self' data: https:; 
+    font-src 'self' data:; 
+    connect-src 'self'; 
+    base-uri 'self'; 
+    form-action 'self'; 
+    manifest-src 'self'; 
+    worker-src 'self'; 
+    frame-ancestors 'self'; 
+    upgrade-insecure-requests;
+  ">
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <title>createElement遊び</title>
+  
+  <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="./manifest.json">
+</head>
+
+<body>
+  <!--😺😺😺-->
+  <button id="catBtn" class="nicePush">Call the kitties</button>
+  Double-click to tuck the kitties in for a nap! 🐱💤
+  <button id="cathomeBtn" class="nicePush">Send them home</button>
+  <ul id="catStage"></ul>
+  
+  <!--単語カード-->
+ 
+  <div class="stickyBar">
+    
+    <button id="delBtn" class="nicePush">×</button>
+    <div id="langStatus"></div>
+    <button id="showAllBtn" class="nicePush">All</button>
+    <button id="createBtn" class="nicePush">One</button>
+  </div><!--stickyBar-->
+  
+  <ul id="wordsStage"></ul>
+  
+  <script src="./words_en.js" defer></script>
+ 
+  <script src="./script.js" defer></script>
+  
+</body>
+
+</html>
